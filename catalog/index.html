@@ -1,0 +1,535 @@
+<!DOCTYPE html><html lang="ru" data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/logo3.png"><!-- Шрифты --><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"><script src="https://unpkg.com/imask" defer></script><meta name="generator" content="Astro v5.13.7"><title>Товары</title><!-- AOS стили --><link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"><!-- SEO микроразметка --><script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "СтройСтруктураГрупп",
+        "url": "https://ssg-n.ru/",
+        "logo": "https://ssg-n.ru/images/logo2.png",
+        "foundingDate": "2020",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ул. Пластунская д. 50/2",
+          "addressLocality": "Сочи",
+          "addressRegion": "Краснодарский край",
+          "postalCode": "354000",
+          "addressCountry": "RU"
+        },
+        "contactPoint": [{
+          "@type": "ContactPoint",
+          "telephone": "+7-928-854-76-43",
+          "contactType": "customer service",
+          "areaServed": "RU",
+          "availableLanguage": ["Russian"]
+        }],
+        "sameAs": [
+          "https://t.me/yourtelegram",
+          "https://wa.me/79288547643"
+        ]
+      }
+    </script><meta property="og:type" content="website"><meta property="og:title" content="СтройСтруктураГрупп — Строительство и инженерные сети"><meta property="og:description" content="Компания СтройСтруктураГрупп — строительство, отопление, водоснабжение, канализация, вентиляция, электромонтаж в Сочи и Краснодарском крае."><meta property="og:url" content="https://ssg-n.ru/"><meta property="og:image" content="https://ssg-n.ru/images/logo.png"><meta name="yandex-verification" content="ВАШ_КОД_ПОДТВЕРЖДЕНИЯ"><link rel="stylesheet" href="/anteyku/_astro/_uslugi_.CR0BlXxc.css">
+<style>.cat_but_off[data-astro-cid-pfjyhaca]{background:#ffffff1a;padding-left:8px;transition:all .3s ease}.cat_but_on[data-astro-cid-pfjyhaca]{background:#ffffff4d;padding-left:8px;transition:all .3s ease}.catType_but[data-astro-cid-pfjyhaca]{background:#ffffff4d}.card[data-astro-cid-pfjyhaca]{opacity:1;transform:translateY(0);transition:opacity .25s ease,transform .25s ease}.card--hidden[data-astro-cid-pfjyhaca]{opacity:0;transform:translateY(10px);pointer-events:none;max-height:0;max-width:0;margin:0;padding:0}.arrow[data-astro-cid-pfjyhaca]{display:inline-block;transition:transform .2s ease;transform:rotate(180deg)}.arrow--open[data-astro-cid-pfjyhaca]{transform:rotate(0)}
+</style></head> <body data-astro-cid-sckkx6r4> <header class=" relative w-full z-50 h-[150px]" style="" data-astro-cid-3ef6ksr2> <!-- Навигация и лого --> <div class="grid grid-cols-[1fr_2fr_1fr] bg-white text-black px-6 items-center header_bg h-[70px]" data-astro-cid-3ef6ksr2> <div data-astro-cid-3ef6ksr2> <a href="/" class=" cursor-pointer
+      flex justify-center
+      text-[36px] font-extrabold 
+      bg-black/5
+      rounded-[15px] px-8 tracking-wide select-none cursor-default
+      opacity-0  animate-fadeUp" data-astro-cid-3ef6ksr2>
+Антейку
+</a> </div> <nav class="
+    flex 
+    justify-center
+    p-2
+    hidden md:flex space-x-10 font-medium text-sm 
+    opacity-0 animate-slideInLeft" style="animation-delay: 0.3s;" data-astro-cid-3ef6ksr2> <a class="nav-link" href="./catalog" data-astro-cid-3ef6ksr2>Товары</a> <a class="nav-link" data-astro-cid-3ef6ksr2>Компания</a> <a class="nav-link" data-astro-cid-3ef6ksr2>Партнёры</a> <a class="nav-link" data-astro-cid-3ef6ksr2>Доставка и самовывоз</a> </nav> <div x-data class="
+      flex flex-col 
+      justify-start items-center
+
+      " data-astro-cid-3ef6ksr2> <div x-data="chatUser()" x-init="checkSession()" data-astro-cid-3ef6ksr2> <template x-if="user" data-astro-cid-3ef6ksr2> <div class="flex relative" data-astro-cid-3ef6ksr2> <button @click="$dispatch('log_modal')" class="hover:text-purple-500" x-text="user.email" data-astro-cid-3ef6ksr2></button> </div> </template> <template x-if="!user" data-astro-cid-3ef6ksr2> <button @click="$dispatch('reglog-modal')" class="nav-link space-x-10 font-medium text-lg" data-astro-cid-3ef6ksr2>
+Личный кабинет
+</button> </template> <!-- Модалка при нажатие на логин --> <div x-show="log_modal" x-transition x-cloak @log_modal.window="log_modal = !log_modal" class="fixed flex flex-flow top-[10%] right-0 bg-purple-400 w-[300px] h-[200px] z-50" data-astro-cid-3ef6ksr2> <template x-if="user" data-astro-cid-3ef6ksr2> <div class="flex w-full justify-around" data-astro-cid-3ef6ksr2> <span x-text="user.email" data-astro-cid-3ef6ksr2></span> <button @click="logout(); log_modal = false" data-astro-cid-3ef6ksr2>Выйти</button> </div> </template> </div> </div> </div> </div> <!-- Нижняя часть (поиск + корзина) --> <div id="searchbar" class="
+  w-full px-6 py-3 
+  grid grid-cols-[1fr_2fr_1fr] 
+  justify-center items-center
+  z-40 transition-all duration-300 bg-white/40 backdrop-blur-md
+  " data-astro-cid-3ef6ksr2> <!-- Каталог --> <div class="relative" data-astro-cid-3ef6ksr2> <button id="catalogButton" class="flex items-start justify-center relative bg-purple-500 backdrop-blur-xl text-[16px] text-white
+      tracking-wide uppercase p-2 rounded-sm
+      " data-astro-cid-3ef6ksr2> <p class="
+        absolute inset-y-0 left-0 flex pl-2 items-center
+        " data-astro-cid-3ef6ksr2>///</p> <a class="px-4" data-astro-cid-3ef6ksr2>Каталог</a> </button> <div id="catalogMenu" class="absolute left-0 mt-2 w-64 bg-white rounded-xl shadow-lg border border-gray-100 p-2 
+               opacity-0 pointer-events-none translate-y-2 transition-all duration-200" data-astro-cid-3ef6ksr2> <a href="/catalog" data-astro-cid-3ef6ksr2>
+Все товары
+</a> <a href="/catalog?category=7" class="block px-3 py-2 rounded-lg text-sm text-gray-800 hover:bg-purple-50 hover:text-purple-700" data-astro-cid-3ef6ksr2> Автоматизация и КИП </a><a href="/catalog?category=6" class="block px-3 py-2 rounded-lg text-sm text-gray-800 hover:bg-purple-50 hover:text-purple-700" data-astro-cid-3ef6ksr2> Автоматика </a><a href="/catalog?category=12" class="block px-3 py-2 rounded-lg text-sm text-gray-800 hover:bg-purple-50 hover:text-purple-700" data-astro-cid-3ef6ksr2> Водонагреватели </a><a href="/catalog?category=1" class="block px-3 py-2 rounded-lg text-sm text-gray-800 hover:bg-purple-50 hover:text-purple-700" data-astro-cid-3ef6ksr2> Запорная арматура </a><a href="/catalog?category=14" class="block px-3 py-2 rounded-lg text-sm text-gray-800 hover:bg-purple-50 hover:text-purple-700" data-astro-cid-3ef6ksr2> Инструменты и прочее </a><a href="/catalog?category=10" class="block px-3 py-2 rounded-lg text-sm text-gray-800 hover:bg-purple-50 hover:text-purple-700" data-astro-cid-3ef6ksr2> Канализация </a><a href="/catalog?category=11" class="block px-3 py-2 rounded-lg text-sm text-gray-800 hover:bg-purple-50 hover:text-purple-700" data-astro-cid-3ef6ksr2> Котельное оборудование </a><a href="/catalog?category=4" class="block px-3 py-2 rounded-lg text-sm text-gray-800 hover:bg-purple-50 hover:text-purple-700" data-astro-cid-3ef6ksr2> Насосное оборудование </a><a href="/catalog?category=2" class="block px-3 py-2 rounded-lg text-sm text-gray-800 hover:bg-purple-50 hover:text-purple-700" data-astro-cid-3ef6ksr2> Регулирующая арматура </a><a href="/catalog?category=5" class="block px-3 py-2 rounded-lg text-sm text-gray-800 hover:bg-purple-50 hover:text-purple-700" data-astro-cid-3ef6ksr2> Теплообменники </a><a href="/catalog?category=3" class="block px-3 py-2 rounded-lg text-sm text-gray-800 hover:bg-purple-50 hover:text-purple-700" data-astro-cid-3ef6ksr2> Трубопроводная арматура </a><a href="/catalog?category=8" class="block px-3 py-2 rounded-lg text-sm text-gray-800 hover:bg-purple-50 hover:text-purple-700" data-astro-cid-3ef6ksr2> Трубы </a><a href="/catalog?category=9" class="block px-3 py-2 rounded-lg text-sm text-gray-800 hover:bg-purple-50 hover:text-purple-700" data-astro-cid-3ef6ksr2> Фитинги,фланцы,камлоки </a><a href="/catalog?category=13" class="block px-3 py-2 rounded-lg text-sm text-gray-800 hover:bg-purple-50 hover:text-purple-700" data-astro-cid-3ef6ksr2> Электрика </a> </div> </div> <!-- Поиск --> <div class="
+    flex
+    relative 
+    w-full 
+    px-2
+    " data-astro-cid-3ef6ksr2> <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400 z-1" data-astro-cid-3ef6ksr2>
+🔍
+</span> <button class="
+    flex items-center justify-center
+    absolute inset-y-0 right-2 px-3 z-1
+    rounded-sm
+    text-white
+    bg-purple-500
+    " data-astro-cid-3ef6ksr2>
+Найти
+</button> <input type="text" name="search" maxlength="100" placeholder="Поиск по названию, бренду или артикулу" autocomplete="off" class="
+      w-full 
+      rounded-lg 
+      border 
+      border-gray-300 bg-white/80 backdrop-blur-sm pl-10 pr-4 py-2 
+      text-gray-800 placeholder-gray-400 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50" data-astro-cid-3ef6ksr2> </div> <!-- Корзина --> <div class="
+  bg-purple-500
+  text-white
+    p-2 rounded-sm
+  " data-astro-cid-3ef6ksr2> <button data-astro-cid-3ef6ksr2>Корзина пуста</button> </div> </div> </header> <!-- кнопка справа-снизу связи --> <button @click="modalOpen = true" class="svyaz_but transition-all duration-500 
+fixed bg-linear-to-r from-indigo-600 to-indigo-800 rounded-full p-2 z-30 w-[50px] h-[50px] top-[90%] md:right-8 right-2" data-astro-cid-3ef6ksr2> <img src="../icons/phone_call.svg" class="object-fill w-full h-full invert" data-astro-cid-3ef6ksr2> </button> <script>
+
+  
+
+
+  // Выезжающий скрол бар из хедера
+  const searchBar = document.getElementById('searchbar');
+  let lastScroll = 0;
+  window.addEventListener("scroll", () =>{
+    const current = window.scrollY
+
+    if (current > 70){
+      searchBar.classList.add("fixed","top-0","left-0",)
+      searchBar.classList.remove("opacity-0")
+    }else{
+      searchBar.classList.remove("fixed","top-0","left-0",)
+    }
+    lastScroll = current;
+  })
+
+
+
+  // Секция мигания-анимации кнопки справа-снизу для связи
+  const svyaz_but = document.querySelector('.svyaz_but')
+  let blinkCount = 0
+  let blinkInterval
+  function startBlick(){
+    blinkInterval = setInterval(() => {
+    svyaz_but.classList.add('opacity-80');
+
+    setTimeout(() => {
+      svyaz_but.classList.remove('opacity-80');
+      blinkCount++;
+
+      if (blinkCount >= 3){
+        clearInterval(blinkInterval);
+
+        setTimeout(() => {
+          blinkCount = 0;
+          startBlick();
+        }, 3000);
+      }
+    }, 1000);
+  }, 2000);
+  } startBlick();
+
+
+
+  document.addEventListener('alpine:init', () => {
+  Alpine.data('chatUser', () => ({
+    user: null,
+    log_modal: false,
+    
+    checkSession() {
+      fetch('http://localhost/ssgprodaj/public/data/db_local/check_ses_local.php', {
+        method: 'GET',
+        credentials: 'include'
+      })
+      .then(res => {
+        if (!res.ok) throw new Error('Сервер вернул ошибку');
+        return res.json();
+      })
+      .then(data => {
+        console.log('Сессия:', data); // <--- обязательно проверяем, что приходит
+        if (data.status === 'success') {
+          this.user = data.user;
+        }
+      })
+      .catch(err => console.error('Ошибка fetch:', err));
+    },
+
+    logout(){
+      fetch('http://localhost/ssgprodaj/public/data/db_local/logout.php', {
+        method: 'POST',
+        credentials: 'include',
+      })
+      .then(res => res.json())
+      .then(data => {
+        console.log(data);
+        if(data.status === "success"){
+          this.user = null;
+        }
+      })
+    }
+  }));
+});
+
+// Каталог
+document.addEventListener('DOMContentLoaded', () => {
+  const catalogButton = document.getElementById('catalogButton')
+  const catalogMenu = document.getElementById('catalogMenu')
+
+  if(!catalogButton || !catalogMenu) return
+
+  let opened = false;
+
+  function openMenu(){
+    opened = true
+    catalogMenu.classList.remove('opacity-0' , 'pointer-events-none', 'translate-y-2')
+    catalogMenu.classList.add('opacity-100', 'translate-y-0');
+  }
+  function closeMenu(){
+    opened = false
+    catalogMenu.classList.add('opacity-0' , 'pointer-events-none', 'translate-y-2')
+    catalogMenu.classList.remove('opacity-100', 'translate-y-0');  
+  }
+  catalogButton.addEventListener('click', (e) =>{
+    e.stopPropagation();
+    opened ? closeMenu() : openMenu()
+  })
+  document.addEventListener('click', () => {
+    if(opened) closeMenu()
+  })
+})
+  
+</script>  <!-- Оверлей --><div id="overlay" x-data="{ open: false }" x-show="open" x-transition x-cloak @reglog-modal.window="open = true" class="fixed inset-0 flex items-center justify-center bg-black/50 z-50" data-astro-cid-yosxc2cm> <div @click.outside="open = false" class="relative bg-white w-[500px] h-[500px] rounded-lg shadow-lg" data-astro-cid-yosxc2cm> <button class="absolute top-1 right-2" @click="open = false" data-astro-cid-yosxc2cm>x</button> <!-- Чат --> <div x-data="chatBotModel " x-init="$watch('open', value => { if (value) startTyping('Выберите действие из списка') })" class="flex flex-col h-full p-3" data-astro-cid-yosxc2cm> <div class="flex-1 overflow-y-auto space-y-2" data-astro-cid-yosxc2cm> <template x-for="msg in messages" :key="msg.id" data-astro-cid-yosxc2cm> <div class="p-2 rounded max-w-[80%]" :class="msg.sender === 'bot' ? 'self-start': 'self-end'" data-astro-cid-yosxc2cm> <div class="p-2 rounded" :class="msg.sender === 'bot' ? 'bg-gray-200 text-black ': 'bg-purple-500 text-white '" x-text="msg.text" data-astro-cid-yosxc2cm></div> <span class="text-xs text-gray-400" x-text="msg.time" data-astro-cid-yosxc2cm></span> <template x-if="step === 0" data-astro-cid-yosxc2cm> <div class="flex gap-2 mt-2" data-astro-cid-yosxc2cm> <button @click="chooseMode('log')" class="bg-purple-500 text-white px-3 py-1 rounded" data-astro-cid-yosxc2cm>
+Войти
+</button> <button @click="chooseMode('reg')" class="bg-green-500 text-white px-3 py-1 rounded" data-astro-cid-yosxc2cm>
+Регистрация
+</button> </div> </template> </div> </template> </div> <!-- Поле ввода --> <div class="mt-2 flex gap-2" data-astro-cid-yosxc2cm> <input x-model="userInput" @keyup.enter="sendMessage" type="text" placeholder="Напишите ответ..." class="border flex-1 rounded p-2" data-astro-cid-yosxc2cm> <button @click="sendMessage()" class="bg-purple-500 text-white px-4 rounded" data-astro-cid-yosxc2cm>
+➤
+</button> </div> </div> </div> </div> <!-- <script type="module" src="./data/db_local/api.js"></script> --> <script>(function(){const PUBLIC_API_BASE = "http://localhost/ssgprodaj/public/data/db_local";
+
+document.addEventListener('alpine:init',()=>{
+    Alpine.data('chatBotModel',() =>({
+        API_BASE: PUBLIC_API_BASE,
+        messages: [],
+        botText: '',
+        fullText: '',
+        index: 0,
+        step: 0,
+        interval: null,
+        userInput:'',
+        formData: {email: '', pass: ''},
+        mode: null,
+        
+
+        startTyping(text){
+            this.botText = '';
+            this.fullText = text;
+            this.index = 0;
+            clearInterval(this.interval);
+
+            let newMsg = {
+                id: Date.now() + Math.random(), 
+                sender: 'bot', 
+                text: '',
+                time: new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}) 
+                };
+            this.messages.push(newMsg);
+
+            this.interval = setInterval(() => {
+                newMsg.text += this.fullText[this.index] ?? '';
+                this.index++;
+                this.messages = this.messages.map(m => m.id === newMsg.id ? {...newMsg}: m)
+                if(this.index >= this.fullText.length){
+                    clearInterval(this.interval);
+                }
+            }, 30);
+        },
+
+        chooseMode(mode){
+            this.mode = mode;
+            this.step = 1;
+            if(this.mode === 'reg'){
+                this.startTyping('Введите ваш Email для регистрации');
+            } else if(this.mode === 'log'){
+                this.startTyping('Введите ваш Email для входа');
+            }
+        },
+
+        sendMessage(){
+            if(!this.userInput.trim()) return;
+
+            let userMsg = {
+                id: Date.now() + Math.random(),
+                sender: "user",
+                text: this.userInput,
+                time: new Date().toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})
+            }
+            this.messages.push(userMsg);
+
+            if(this.mode === 'reg'){
+                if(this.step === 1){
+                    this.formData.email = this.userInput;
+                } else if (this.step === 2){
+                    this.formData.pass = this.userInput
+                }
+            }
+            if(this.mode === 'log'){
+                if(this.step === 1){
+                    this.formData.email = this.userInput;
+                } else if (this.step === 2){
+                    this.formData.pass = this.userInput
+                }
+            }
+
+            
+
+            this.userInput = '';
+            this.nextStep();
+            console.log(this.formData)
+            
+        },
+
+        nextStep(){
+            this.step++;
+            if(this.mode === 'reg'){
+                if(this.step === 2){
+                    this.startTyping('Придумайте пароль');
+                } else if(this.step === 3){
+                    this.startTyping('Регистрация завершена');
+                    fetch(`${this.API_BASE}/register_local.php`, {
+                        method: 'POST',
+                        credentials: 'include',
+                        headers: {'Content-type': 'application/json'},
+                        body: JSON.stringify(this.formData)
+                    })
+                    .then(res => res.json())
+                    .then(data => {console.log('Сервер ответил', data);})
+                    .catch(err => console.error("Ошибка при отправке", err));
+                }
+            }
+            if(this.mode === 'log'){
+                if(this.step === 2){
+                    this.startTyping('Введите пароль');
+                } else if(this.step === 3){
+                    this.startTyping('Вход выполнен');
+
+                    fetch(`${this.API_BASE}/login_local.php`, {
+                        method: 'POST',
+                        credentials: 'include',
+                        headers: {'Content-type': 'application/json'},
+                        body: JSON.stringify(this.formData)
+                    })
+                    .then(res => res.json())
+                    .then(data => {console.log('Сервер ответил', data);})
+                    .catch(err => console.error("Ошибка при отправке", err));
+                }
+            }
+            
+        },
+        
+    }))
+})
+
+
+
+})();</script>   <div class="w-full bg-gray-100 py-8" data-astro-cid-pfjyhaca> <div class="max-w-6xl mx-auto grid grid-cols-[260px_1fr] gap-6" data-astro-cid-pfjyhaca> <!-- ЛЕВАЯ КОЛОНКА: КАТЕГОРИИ --> <aside class="bg-purple-500 text-white rounded-2xl p-4 flex flex-col gap-2 shadow-md" data-astro-cid-pfjyhaca> <h2 class="text-xl font-semibold mb-2" data-astro-cid-pfjyhaca>Категории</h2> <button class="categ_but cat_but_off w-full p-2 rounded-lg cursor-pointer text-left text-sm" data-category="all" data-cat-name="Все товары" data-astro-cid-pfjyhaca>
+Все товары
+</button> <div class="mb-1" data-astro-cid-pfjyhaca>  <button class="categ_but cat_but_off w-full p-2 rounded-lg cursor-pointer text-left text-sm" data-category="7" data-cat-name="Автоматизация и КИП" data-astro-cid-pfjyhaca> Автоматизация и КИП <span class="text-xs opacity-70 arrow" data-astro-cid-pfjyhaca>▼</span> </button>  <div class="types-panel max-h-0 overflow-hidden transition-all duration-200" data-types-for="7" data-astro-cid-pfjyhaca> <button class="type_but w-full mt-1 px-4 py-1.5 rounded-lg cursor-pointer 
+              text-left text-xs bg-white/10 hover:bg-white/20" data-type-id="13" data-parent-category="7" data-astro-cid-pfjyhaca> Датчики температуры </button><button class="type_but w-full mt-1 px-4 py-1.5 rounded-lg cursor-pointer 
+              text-left text-xs bg-white/10 hover:bg-white/20" data-type-id="14" data-parent-category="7" data-astro-cid-pfjyhaca> Расходомеры </button> </div> </div><div class="mb-1" data-astro-cid-pfjyhaca>  <button class="categ_but cat_but_off w-full p-2 rounded-lg cursor-pointer text-left text-sm" data-category="6" data-cat-name="Автоматика" data-astro-cid-pfjyhaca> Автоматика <span class="text-xs opacity-70 arrow" data-astro-cid-pfjyhaca>▼</span> </button>  <div class="types-panel max-h-0 overflow-hidden transition-all duration-200" data-types-for="6" data-astro-cid-pfjyhaca> <button class="type_but w-full mt-1 px-4 py-1.5 rounded-lg cursor-pointer 
+              text-left text-xs bg-white/10 hover:bg-white/20" data-type-id="11" data-parent-category="6" data-astro-cid-pfjyhaca> Контроллеры и шкафы управления </button><button class="type_but w-full mt-1 px-4 py-1.5 rounded-lg cursor-pointer 
+              text-left text-xs bg-white/10 hover:bg-white/20" data-type-id="12" data-parent-category="6" data-astro-cid-pfjyhaca> Датчики и реле давления </button> </div> </div><div class="mb-1" data-astro-cid-pfjyhaca>  <button class="categ_but cat_but_off w-full p-2 rounded-lg cursor-pointer text-left text-sm" data-category="12" data-cat-name="Водонагреватели" data-astro-cid-pfjyhaca> Водонагреватели <span class="text-xs opacity-70 arrow" data-astro-cid-pfjyhaca>▼</span> </button>  <div class="types-panel max-h-0 overflow-hidden transition-all duration-200" data-types-for="12" data-astro-cid-pfjyhaca> <button class="type_but w-full mt-1 px-4 py-1.5 rounded-lg cursor-pointer 
+              text-left text-xs bg-white/10 hover:bg-white/20" data-type-id="23" data-parent-category="12" data-astro-cid-pfjyhaca> Накопительные водонагреватели </button><button class="type_but w-full mt-1 px-4 py-1.5 rounded-lg cursor-pointer 
+              text-left text-xs bg-white/10 hover:bg-white/20" data-type-id="24" data-parent-category="12" data-astro-cid-pfjyhaca> Проточные водонагреватели </button> </div> </div><div class="mb-1" data-astro-cid-pfjyhaca>  <button class="categ_but cat_but_off w-full p-2 rounded-lg cursor-pointer text-left text-sm" data-category="1" data-cat-name="Запорная арматура" data-astro-cid-pfjyhaca> Запорная арматура <span class="text-xs opacity-70 arrow" data-astro-cid-pfjyhaca>▼</span> </button>  <div class="types-panel max-h-0 overflow-hidden transition-all duration-200" data-types-for="1" data-astro-cid-pfjyhaca> <button class="type_but w-full mt-1 px-4 py-1.5 rounded-lg cursor-pointer 
+              text-left text-xs bg-white/10 hover:bg-white/20" data-type-id="1" data-parent-category="1" data-astro-cid-pfjyhaca> Шаровые краны </button><button class="type_but w-full mt-1 px-4 py-1.5 rounded-lg cursor-pointer 
+              text-left text-xs bg-white/10 hover:bg-white/20" data-type-id="2" data-parent-category="1" data-astro-cid-pfjyhaca> Задвижки клиновые </button> </div> </div><div class="mb-1" data-astro-cid-pfjyhaca>  <button class="categ_but cat_but_off w-full p-2 rounded-lg cursor-pointer text-left text-sm" data-category="14" data-cat-name="Инструменты и прочее" data-astro-cid-pfjyhaca> Инструменты и прочее <span class="text-xs opacity-70 arrow" data-astro-cid-pfjyhaca>▼</span> </button>  <div class="types-panel max-h-0 overflow-hidden transition-all duration-200" data-types-for="14" data-astro-cid-pfjyhaca> <button class="type_but w-full mt-1 px-4 py-1.5 rounded-lg cursor-pointer 
+              text-left text-xs bg-white/10 hover:bg-white/20" data-type-id="27" data-parent-category="14" data-astro-cid-pfjyhaca> Монтажный инструмент </button><button class="type_but w-full mt-1 px-4 py-1.5 rounded-lg cursor-pointer 
+              text-left text-xs bg-white/10 hover:bg-white/20" data-type-id="28" data-parent-category="14" data-astro-cid-pfjyhaca> Расходные материалы </button> </div> </div><div class="mb-1" data-astro-cid-pfjyhaca>  <button class="categ_but cat_but_off w-full p-2 rounded-lg cursor-pointer text-left text-sm" data-category="10" data-cat-name="Канализация" data-astro-cid-pfjyhaca> Канализация <span class="text-xs opacity-70 arrow" data-astro-cid-pfjyhaca>▼</span> </button>  <div class="types-panel max-h-0 overflow-hidden transition-all duration-200" data-types-for="10" data-astro-cid-pfjyhaca> <button class="type_but w-full mt-1 px-4 py-1.5 rounded-lg cursor-pointer 
+              text-left text-xs bg-white/10 hover:bg-white/20" data-type-id="19" data-parent-category="10" data-astro-cid-pfjyhaca> Канализационные трубы </button><button class="type_but w-full mt-1 px-4 py-1.5 rounded-lg cursor-pointer 
+              text-left text-xs bg-white/10 hover:bg-white/20" data-type-id="20" data-parent-category="10" data-astro-cid-pfjyhaca> Канализационные фасонные части </button> </div> </div><div class="mb-1" data-astro-cid-pfjyhaca>  <button class="categ_but cat_but_off w-full p-2 rounded-lg cursor-pointer text-left text-sm" data-category="11" data-cat-name="Котельное оборудование" data-astro-cid-pfjyhaca> Котельное оборудование <span class="text-xs opacity-70 arrow" data-astro-cid-pfjyhaca>▼</span> </button>  <div class="types-panel max-h-0 overflow-hidden transition-all duration-200" data-types-for="11" data-astro-cid-pfjyhaca> <button class="type_but w-full mt-1 px-4 py-1.5 rounded-lg cursor-pointer 
+              text-left text-xs bg-white/10 hover:bg-white/20" data-type-id="21" data-parent-category="11" data-astro-cid-pfjyhaca> Напольные котлы </button><button class="type_but w-full mt-1 px-4 py-1.5 rounded-lg cursor-pointer 
+              text-left text-xs bg-white/10 hover:bg-white/20" data-type-id="22" data-parent-category="11" data-astro-cid-pfjyhaca> Настенные котлы </button> </div> </div><div class="mb-1" data-astro-cid-pfjyhaca>  <button class="categ_but cat_but_off w-full p-2 rounded-lg cursor-pointer text-left text-sm" data-category="4" data-cat-name="Насосное оборудование" data-astro-cid-pfjyhaca> Насосное оборудование <span class="text-xs opacity-70 arrow" data-astro-cid-pfjyhaca>▼</span> </button>  <div class="types-panel max-h-0 overflow-hidden transition-all duration-200" data-types-for="4" data-astro-cid-pfjyhaca> <button class="type_but w-full mt-1 px-4 py-1.5 rounded-lg cursor-pointer 
+              text-left text-xs bg-white/10 hover:bg-white/20" data-type-id="7" data-parent-category="4" data-astro-cid-pfjyhaca> Циркуляционные насосы </button><button class="type_but w-full mt-1 px-4 py-1.5 rounded-lg cursor-pointer 
+              text-left text-xs bg-white/10 hover:bg-white/20" data-type-id="8" data-parent-category="4" data-astro-cid-pfjyhaca> Сетевые насосы </button> </div> </div><div class="mb-1" data-astro-cid-pfjyhaca>  <button class="categ_but cat_but_off w-full p-2 rounded-lg cursor-pointer text-left text-sm" data-category="2" data-cat-name="Регулирующая арматура" data-astro-cid-pfjyhaca> Регулирующая арматура <span class="text-xs opacity-70 arrow" data-astro-cid-pfjyhaca>▼</span> </button>  <div class="types-panel max-h-0 overflow-hidden transition-all duration-200" data-types-for="2" data-astro-cid-pfjyhaca> <button class="type_but w-full mt-1 px-4 py-1.5 rounded-lg cursor-pointer 
+              text-left text-xs bg-white/10 hover:bg-white/20" data-type-id="3" data-parent-category="2" data-astro-cid-pfjyhaca> Клапаны регулирующие </button><button class="type_but w-full mt-1 px-4 py-1.5 rounded-lg cursor-pointer 
+              text-left text-xs bg-white/10 hover:bg-white/20" data-type-id="4" data-parent-category="2" data-astro-cid-pfjyhaca> Термостатические клапаны </button> </div> </div><div class="mb-1" data-astro-cid-pfjyhaca>  <button class="categ_but cat_but_off w-full p-2 rounded-lg cursor-pointer text-left text-sm" data-category="5" data-cat-name="Теплообменники" data-astro-cid-pfjyhaca> Теплообменники <span class="text-xs opacity-70 arrow" data-astro-cid-pfjyhaca>▼</span> </button>  <div class="types-panel max-h-0 overflow-hidden transition-all duration-200" data-types-for="5" data-astro-cid-pfjyhaca> <button class="type_but w-full mt-1 px-4 py-1.5 rounded-lg cursor-pointer 
+              text-left text-xs bg-white/10 hover:bg-white/20" data-type-id="9" data-parent-category="5" data-astro-cid-pfjyhaca> Пластинчатые теплообменники </button><button class="type_but w-full mt-1 px-4 py-1.5 rounded-lg cursor-pointer 
+              text-left text-xs bg-white/10 hover:bg-white/20" data-type-id="10" data-parent-category="5" data-astro-cid-pfjyhaca> Трубчатые теплообменники </button> </div> </div><div class="mb-1" data-astro-cid-pfjyhaca>  <button class="categ_but cat_but_off w-full p-2 rounded-lg cursor-pointer text-left text-sm" data-category="3" data-cat-name="Трубопроводная арматура" data-astro-cid-pfjyhaca> Трубопроводная арматура <span class="text-xs opacity-70 arrow" data-astro-cid-pfjyhaca>▼</span> </button>  <div class="types-panel max-h-0 overflow-hidden transition-all duration-200" data-types-for="3" data-astro-cid-pfjyhaca> <button class="type_but w-full mt-1 px-4 py-1.5 rounded-lg cursor-pointer 
+              text-left text-xs bg-white/10 hover:bg-white/20" data-type-id="5" data-parent-category="3" data-astro-cid-pfjyhaca> Фланцевые компенсаторы </button><button class="type_but w-full mt-1 px-4 py-1.5 rounded-lg cursor-pointer 
+              text-left text-xs bg-white/10 hover:bg-white/20" data-type-id="6" data-parent-category="3" data-astro-cid-pfjyhaca> Фильтры грязевики </button> </div> </div><div class="mb-1" data-astro-cid-pfjyhaca>  <button class="categ_but cat_but_off w-full p-2 rounded-lg cursor-pointer text-left text-sm" data-category="8" data-cat-name="Трубы" data-astro-cid-pfjyhaca> Трубы <span class="text-xs opacity-70 arrow" data-astro-cid-pfjyhaca>▼</span> </button>  <div class="types-panel max-h-0 overflow-hidden transition-all duration-200" data-types-for="8" data-astro-cid-pfjyhaca> <button class="type_but w-full mt-1 px-4 py-1.5 rounded-lg cursor-pointer 
+              text-left text-xs bg-white/10 hover:bg-white/20" data-type-id="15" data-parent-category="8" data-astro-cid-pfjyhaca> Стальные трубы </button><button class="type_but w-full mt-1 px-4 py-1.5 rounded-lg cursor-pointer 
+              text-left text-xs bg-white/10 hover:bg-white/20" data-type-id="16" data-parent-category="8" data-astro-cid-pfjyhaca> Полиэтиленовые трубы </button> </div> </div><div class="mb-1" data-astro-cid-pfjyhaca>  <button class="categ_but cat_but_off w-full p-2 rounded-lg cursor-pointer text-left text-sm" data-category="9" data-cat-name="Фитинги,фланцы,камлоки" data-astro-cid-pfjyhaca> Фитинги,фланцы,камлоки <span class="text-xs opacity-70 arrow" data-astro-cid-pfjyhaca>▼</span> </button>  <div class="types-panel max-h-0 overflow-hidden transition-all duration-200" data-types-for="9" data-astro-cid-pfjyhaca> <button class="type_but w-full mt-1 px-4 py-1.5 rounded-lg cursor-pointer 
+              text-left text-xs bg-white/10 hover:bg-white/20" data-type-id="17" data-parent-category="9" data-astro-cid-pfjyhaca> Резьбовые фитинги </button><button class="type_but w-full mt-1 px-4 py-1.5 rounded-lg cursor-pointer 
+              text-left text-xs bg-white/10 hover:bg-white/20" data-type-id="18" data-parent-category="9" data-astro-cid-pfjyhaca> Фланцы и камлоки </button> </div> </div><div class="mb-1" data-astro-cid-pfjyhaca>  <button class="categ_but cat_but_off w-full p-2 rounded-lg cursor-pointer text-left text-sm" data-category="13" data-cat-name="Электрика" data-astro-cid-pfjyhaca> Электрика <span class="text-xs opacity-70 arrow" data-astro-cid-pfjyhaca>▼</span> </button>  <div class="types-panel max-h-0 overflow-hidden transition-all duration-200" data-types-for="13" data-astro-cid-pfjyhaca> <button class="type_but w-full mt-1 px-4 py-1.5 rounded-lg cursor-pointer 
+              text-left text-xs bg-white/10 hover:bg-white/20" data-type-id="25" data-parent-category="13" data-astro-cid-pfjyhaca> Кабели и провода </button><button class="type_but w-full mt-1 px-4 py-1.5 rounded-lg cursor-pointer 
+              text-left text-xs bg-white/10 hover:bg-white/20" data-type-id="26" data-parent-category="13" data-astro-cid-pfjyhaca> Щитовое оборудование </button> </div> </div> </aside> <!-- ПРАВАЯ КОЛОНКА: ТОВАРЫ + ПОИСК --> <main class="flex flex-col gap-4" data-astro-cid-pfjyhaca> <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3" data-astro-cid-pfjyhaca> <h1 id="nameText" class="text-3xl font-bold" data-astro-cid-pfjyhaca>Все товары</h1> <input id="search" type="text" placeholder="Поиск по товарам..." class="border border-gray-300 w-full sm:w-1/2 p-2 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-purple-400 bg-white shadow-sm" data-astro-cid-pfjyhaca> </div> <div class="flex flex-wrap gap-4 justify-center sm:justify-start" data-astro-cid-pfjyhaca> <div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="шаровой кран латунный 1&#34;" data-category="1" data-type-id="1" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/valves/ball/ball_1in.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Шаровой кран латунный 1&quot; </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="шаровой кран стальной dn50" data-category="1" data-type-id="1" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/valves/ball/ball_dn50.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Шаровой кран стальной DN50 </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="задвижка чугунная dn80" data-category="1" data-type-id="2" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/valves/gate/gate_dn80.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Задвижка чугунная DN80 </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="задвижка стальная dn100" data-category="1" data-type-id="2" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/valves/gate/gate_dn100.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Задвижка стальная DN100 </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="клапан регулирующий dn25" data-category="2" data-type-id="3" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/control_valves/reg/reg_dn25.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Клапан регулирующий DN25 </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="клапан регулирующий dn50" data-category="2" data-type-id="3" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/control_valves/reg/reg_dn50.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Клапан регулирующий DN50 </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="термостатический клапан радиаторный" data-category="2" data-type-id="4" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/control_valves/thermo/rad_valve.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Термостатический клапан радиаторный </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="термостатический клапан узловой" data-category="2" data-type-id="4" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/control_valves/thermo/mix_valve.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Термостатический клапан узловой </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="компенсатор резиновый dn80" data-category="3" data-type-id="5" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/piping/comp/comp_rubber_dn80.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Компенсатор резиновый DN80 </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="компенсатор линзовый dn100" data-category="3" data-type-id="5" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/piping/comp/comp_lens_dn100.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Компенсатор линзовый DN100 </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="фильтр грязевик y-образный dn32" data-category="3" data-type-id="6" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/piping/strainers/y_strainer_dn32.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Фильтр грязевик Y-образный DN32 </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="фильтр сетчатый фланцевый dn80" data-category="3" data-type-id="6" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/piping/strainers/flange_strainer_dn80.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Фильтр сетчатый фланцевый DN80 </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="насос циркуляционный 25-40" data-category="4" data-type-id="7" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/pumps/circ/circ_25_40.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Насос циркуляционный 25-40 </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="насос циркуляционный 32-60" data-category="4" data-type-id="7" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/pumps/circ/circ_32_60.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Насос циркуляционный 32-60 </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="сетевой насос dn80" data-category="4" data-type-id="8" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/pumps/network/network_dn80.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Сетевой насос DN80 </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="сетевой насос dn100" data-category="4" data-type-id="8" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/pumps/network/network_dn100.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Сетевой насос DN100 </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="пластинчатый теплообменник 50 квт" data-category="5" data-type-id="9" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/hex/plate/plate_50kw.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Пластинчатый теплообменник 50 кВт </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="пластинчатый теплообменник 200 квт" data-category="5" data-type-id="9" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/hex/plate/plate_200kw.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Пластинчатый теплообменник 200 кВт </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="кожухотрубный теплообменник компактный" data-category="5" data-type-id="10" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/hex/shell_tube/small_shell_tube.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Кожухотрубный теплообменник компактный </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="кожухотрубный теплообменник промышленный" data-category="5" data-type-id="10" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/hex/shell_tube/big_shell_tube.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Кожухотрубный теплообменник промышленный </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="шкаф управления насосами" data-category="6" data-type-id="11" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/automation/panels/pump_panel.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Шкаф управления насосами </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="шкаф управления котельной" data-category="6" data-type-id="11" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/automation/panels/boiler_panel.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Шкаф управления котельной </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="реле давления 1–6 бар" data-category="6" data-type-id="12" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/automation/pressure/pressure_relay_1_6bar.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Реле давления 1–6 бар </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="датчик давления 0–10 бар" data-category="6" data-type-id="12" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/automation/pressure/pressure_sensor_0_10bar.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Датчик давления 0–10 бар </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="датчик температуры погружной" data-category="7" data-type-id="13" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/kip/temp/temp_probe.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Датчик температуры погружной </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="датчик температуры накладной" data-category="7" data-type-id="13" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/kip/temp/temp_surface.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Датчик температуры накладной </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="расходомер ультразвуковой" data-category="7" data-type-id="14" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/kip/flow/ultra_flowmeter.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Расходомер ультразвуковой </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="расходомер механический" data-category="7" data-type-id="14" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/kip/flow/mech_flowmeter.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Расходомер механический </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="труба стальная ду25" data-category="8" data-type-id="15" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/pipes/steel/steel_d25.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Труба стальная Ду25 </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="труба стальная ду50" data-category="8" data-type-id="15" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/pipes/steel/steel_d50.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Труба стальная Ду50 </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="труба пэ100 sdr11 d32" data-category="8" data-type-id="16" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/pipes/pe/pe100_d32.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Труба ПЭ100 SDR11 d32 </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="труба пэ100 sdr11 d63" data-category="8" data-type-id="16" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/pipes/pe/pe100_d63.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Труба ПЭ100 SDR11 d63 </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="фитинг резьбовой 1&#34; вн/нар" data-category="9" data-type-id="17" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/fittings/threaded/fitting_1in.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Фитинг резьбовой 1&quot; вн/нар </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="муфта резьбовая 3/4&#34;" data-category="9" data-type-id="17" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/fittings/threaded/coupling_3_4.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Муфта резьбовая 3/4&quot; </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="фланец стальной ду80" data-category="9" data-type-id="18" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/fittings/flanges/flange_d80.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Фланец стальной Ду80 </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="камлок тип c 2&#34;" data-category="9" data-type-id="18" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/fittings/camloks/camlock_c_2in.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Камлок тип C 2&quot; </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="труба канализационная 110 мм" data-category="10" data-type-id="19" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/sewage/pipes/pipe_110.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Труба канализационная 110 мм </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="труба канализационная 50 мм" data-category="10" data-type-id="19" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/sewage/pipes/pipe_50.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Труба канализационная 50 мм </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="отвод канализационный 110/90°" data-category="10" data-type-id="20" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/sewage/fittings/elbow_110_90.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Отвод канализационный 110/90° </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="тройник канализационный 110/110/50" data-category="10" data-type-id="20" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/sewage/fittings/tee_110_50.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Тройник канализационный 110/110/50 </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="котёл напольный 50 квт" data-category="11" data-type-id="21" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/boilers/floor/floor_50kw.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Котёл напольный 50 кВт </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="котёл напольный 100 квт" data-category="11" data-type-id="21" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/boilers/floor/floor_100kw.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Котёл напольный 100 кВт </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="котёл настенный двухконтурный 24 квт" data-category="11" data-type-id="22" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/boilers/wall/wall_24kw.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Котёл настенный двухконтурный 24 кВт </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="котёл настенный одноконтурный 28 квт" data-category="11" data-type-id="22" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/boilers/wall/wall_28kw.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Котёл настенный одноконтурный 28 кВт </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="бойлер косвенного нагрева 100 л" data-category="12" data-type-id="23" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/water_heaters/storage/storage_100l.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Бойлер косвенного нагрева 100 л </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="бойлер косвенного нагрева 200 л" data-category="12" data-type-id="23" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/water_heaters/storage/storage_200l.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Бойлер косвенного нагрева 200 л </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="проточный водонагреватель 12 квт" data-category="12" data-type-id="24" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/water_heaters/instant/instant_12kw.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Проточный водонагреватель 12 кВт </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="проточный водонагреватель 18 квт" data-category="12" data-type-id="24" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/water_heaters/instant/instant_18kw.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Проточный водонагреватель 18 кВт </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="кабель силовой 3x2,5" data-category="13" data-type-id="25" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/electric/cables/cable_3x2_5.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Кабель силовой 3x2,5 </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="кабель силовой 5x4" data-category="13" data-type-id="25" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/electric/cables/cable_5x4.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Кабель силовой 5x4 </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="щит распределительный навесной" data-category="13" data-type-id="26" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/electric/panels/panel_12m.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Щит распределительный навесной </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="автоматический выключатель 25 а" data-category="13" data-type-id="26" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/electric/panels/automat_25a.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Автоматический выключатель 25 А </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="набор гаечных ключей" data-category="14" data-type-id="27" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/tools/install/wrenches_set.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Набор гаечных ключей </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="труборез роликовый" data-category="14" data-type-id="27" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/tools/install/pipe_cutter.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Труборез роликовый </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="лента фум" data-category="14" data-type-id="28" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/tools/consumables/fum_tape.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Лента ФУМ </h3>  </div> </div><div class="card flex flex-col w-[260px] bg-white overflow-hidden rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-200" data-name="пакля сантехническая" data-category="14" data-type-id="28" data-astro-cid-pfjyhaca> <div class="flex w-full h-[180px] bg-gray-100 justify-center items-center" data-astro-cid-pfjyhaca> <img src="products/tools/consumables/linen_pack.jpg" class="w-full h-full object-fill" loading="lazy" data-astro-cid-pfjyhaca> </div> <div class="flex flex-col gap-1 p-3 h-[120px]" data-astro-cid-pfjyhaca> <h3 class="text-sm font-semibold line-clamp-2 text-gray-900" data-astro-cid-pfjyhaca> Пакля сантехническая </h3>  </div> </div> </div> <!-- кнопка дальше --> <div class="flex_center " data-astro-cid-pfjyhaca> <button class="px-4 py-2 rounded-lg bg-purple-500 text-white text-sm font-semibold hover:bg-purple-600 disabled:opacity-40 disabled:cursor-default" id="butLoadMore" data-astro-cid-pfjyhaca>Прогрузить еще</button> </div> </main> </div> </div>  <script>
+document.addEventListener('DOMContentLoaded', () => {
+const input = document.getElementById('search');
+const cards = [...document.querySelectorAll('[data-name]')];
+const categoryButtons = document.querySelectorAll('.categ_but')
+const nameText = document.getElementById('nameText')
+const typeButtons = document.querySelectorAll('.type_but')
+// показать еще кнопка
+const butLoadMore = document.getElementById('butLoadMore') 
+
+
+const params = new URLSearchParams(window.location.search)
+const urlCategory = params.get('category')
+
+let activeCategory = urlCategory || "all";
+let activeTypeId = null;
+
+const pageSize = 15
+let visibleLimit = pageSize
+
+categoryButtons.forEach(btn => {
+    const btnCat = btn.dataset.category?.toString()
+
+    if(urlCategory && btnCat === urlCategory){
+      btn.classList.remove('cat_but_off');
+      btn.classList.add('cat_but_on');
+
+      const catName = btn.dataset.catName || 'Товары';
+      nameText.textContent = catName;
+    }
+})
+
+input.addEventListener('input', () => {
+    applyFilters();
+    visibleLimit = pageSize
+})
+
+categoryButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        categoryButtons.forEach(b => {
+            // Сбросить у всех
+            b.classList.remove('cat_but_on');
+            b.classList.add('cat_but_off');
+        })
+
+        // Выделить активную
+        btn.classList.remove('cat_but_off');
+        btn.classList.add('cat_but_on');
+        
+        const catName = btn.dataset.catName || 'Товары'
+        nameText.textContent = catName
+        
+        activeCategory = btn.dataset.category
+
+        categoryButtons.forEach(b => {
+          const arrow = b.querySelector('.arrow')
+          if (arrow) arrow.classList.remove('arrow--open')
+        })
+        const arrow = btn.querySelector('.arrow')
+        if(arrow) arrow.classList.add('arrow--open')
+        
+        // Типы товаров панель
+        // Аккордеон: закрыть все панели
+        activeTypeId = null
+        typeButtons.forEach(tb => tb.classList.remove('catType_but'));
+        document.querySelectorAll('.types-panel').forEach(panel => {
+          panel.style.maxHeight = '0px';
+        });
+
+        const panelCatId = btn.dataset.category
+        if(panelCatId){
+          const currentPanel = document.querySelector(`[data-types-for="${panelCatId}"]`)
+          if(currentPanel){
+            currentPanel.style.maxHeight = currentPanel.scrollHeight + 'px';
+          }
+        }
+
+
+
+
+        // при клике можно обновлять URL (без перезагрузки), если хочешь:
+      const newParams = new URLSearchParams(window.location.search);
+      if (activeCategory === 'all') {
+        newParams.delete('category');
+      } else {
+        newParams.set('category', activeCategory);
+      }
+      const newUrl = window.location.pathname + (newParams.toString() ? `?${newParams.toString()}` : '');
+      window.history.replaceState({}, '', newUrl); 
+
+      visibleLimit = pageSize
+      applyFilters()
+    })
+})
+
+typeButtons.forEach(btn => {
+  btn.addEventListener('click',() =>{
+    const typeId = btn.dataset.typeId
+    activeTypeId = typeId || null;
+
+    typeButtons.forEach(b => b.classList.remove('catType_but'))
+    btn.classList.add('catType_but')
+
+    visibleLimit = pageSize
+    applyFilters()
+  })
+})
+
+if(butLoadMore){
+  butLoadMore.addEventListener('click',() => {
+    visibleLimit += pageSize
+    applyFilters()
+  })
+}
+
+function applyFilters(){
+    const query = (input.value || '').toLowerCase();
+    let delay = 0
+    let shownCount = 0
+
+    const visibleCards = []
+
+    cards.forEach(card => {
+        const title = (card.dataset.name || '').toLowerCase();
+        const category = card.dataset.category
+        const cardTypeId = card.dataset.typeId
+
+        const matchSearch = title.includes(query)
+        const matchCategory = activeCategory === 'all' || activeCategory === category
+        const matchType = !activeTypeId || (activeTypeId === cardTypeId)
+        const visible = matchSearch && matchCategory && matchType
+
+        if(visible){
+          visibleCards.push(card)
+        }
+      })
+
+      cards.forEach(card => {
+        card.style.transitionDelay = '0ms';
+        card.classList.add('card--hidden')
+      })
+
+      visibleCards.forEach(card => {
+        if(shownCount < visibleLimit){
+          card.style.transitionDelay = `${delay}ms`
+          card.classList.remove('card--hidden')
+          delay += 40 
+          shownCount++
+        }
+      });
+
+      if(butLoadMore){
+        if(shownCount >= visibleCards.length){
+          butLoadMore.disabled = true
+        } else{
+          butLoadMore.disabled = false
+        }
+      }
+}
+applyFilters();
+})
+</script>  <!-- Сео оптимизировал --><footer class="w-full bg-neutral-900 text-neutral-200 py-12" itemscope itemtype="https://schema.org/Organization"> <div class="w-full max-w-7xl mx-auto px-6 flex flex-col md:flex-row md:justify-between md:items-start gap-10"> <!-- Логотип и юр. информация --> <div class="flex flex-col gap-2"> <h1 class="text-2xl font-bold tracking-tight" itemprop="name">«Антейку»</h1> <meta itemprop="legalName" content="Общество с ограниченной ответственностью СтройСтруктураГрупп"> <p class="text-sm text-neutral-400">ОГРН: <span itemprop="identifier">1232300019401</span></p> <p class="text-sm text-neutral-400">ИНН: <span itemprop="taxID">2366040859</span></p> </div> <!-- Контакты --> <div class="flex flex-col gap-2" itemprop="contactPoint" itemscope itemtype="https://schema.org/ContactPoint"> <meta itemprop="contactType" content="customer service"> <a href="tel:+79288547643" class="text-lg font-semibold hover:text-white transition" itemprop="telephone" title="Позвонить в СтройСтруктураГрупп">+7 928 854 76 43</a> <a href="mailto:ooo.ssg88@mail.ru" class="text-sm text-neutral-400 hover:text-white transition" itemprop="email" title="Написать письмо в СтройСтруктураГрупп">ooo.ssg88@mail.ru</a> </div> <!-- Адрес --> <div class="flex flex-col gap-2 max-w-xs" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"> <p class="text-sm text-neutral-400"> <span itemprop="postalCode">354000</span>,
+<span itemprop="addressRegion">Краснодарский край</span>,
+<span itemprop="addressLocality">г. Сочи</span>, <br> <span itemprop="streetAddress">ул. Пластунская, д. 50/2</span> </p> </div> <!-- Соцсети --> <div class="flex gap-4 hidden"> <a href="#" target="_blank" rel="noopener nofollow" aria-label="Telegram компании СтройСтруктураГрупп" title="Перейти в Telegram СтройСтруктураГрупп" class="hover:text-blue-500 transition" itemprop="sameAs"> <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4"></path> </svg> </a> <a href="#" target="_blank" rel="noopener nofollow" aria-label="WhatsApp компании СтройСтруктураГрупп" title="Написать в WhatsApp СтройСтруктураГрупп" class="hover:text-green-500 transition" itemprop="sameAs"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"> <path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path> <path d="M9 10a.5.5 0 0 0 1 0v-1a.5.5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0 -1h-1a.5.5 0 0 0 0 1"></path> </svg> </a> </div> </div> <div class="w-full max-w-7xl mx-auto px-6 mt-10 border-t border-neutral-800 pt-4 text-sm text-neutral-500">
+© <span itemprop="copyrightYear">2025</span> <span itemprop="name">СтройСтруктураГрупп</span>. Все права защищены.
+</div> </footer> <!-- Alpine.js --> <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script> <!-- AOS --> <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script> <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        if (typeof AOS !== 'undefined') {
+          AOS.init({ duration: 1200 });
+        }
+      });
+    </script> </body> </html> 

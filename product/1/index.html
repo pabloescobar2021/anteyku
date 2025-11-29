@@ -249,8 +249,9 @@ document.addEventListener('DOMContentLoaded',() =>{
     </script> </div> </header> <!-- кнопка справа-снизу связи --> <button @click="modalOpen = true" class="svyaz_but transition-all duration-500 
 fixed bg-linear-to-r from-indigo-600 to-indigo-800 rounded-full p-2 z-30 w-[50px] h-[50px] top-[90%] md:right-8 right-2" data-astro-cid-3ef6ksr2> <img src="../icons/phone_call.svg" class="object-fill w-full h-full invert" data-astro-cid-3ef6ksr2> </button> <script type="module">
 import { supabase } from '../../public/api/supabase.js';
-import {isUserAdmin} from '../../public/api/sb_stuff';
-import { clearCart } from "../../public/cart/cart";
+import {isUserAdmin} from '../../public/api/sb_stuff.js';
+import { clearCart } from "../../public/cart/cart.js";
+const base = import.meta.env.BASE_URL;
 
 async function initAdminBut() {
   const navButtons = document.getElementById('navButtons')
@@ -260,7 +261,7 @@ async function initAdminBut() {
 
     if(userIsAdmin === true){
     navButtons.insertAdjacentHTML('beforeend',`
-      <a id="adminHref" class="nav-link" href="/admin/adminPage"> admin </a>
+       <a id="adminHref" class="nav-link" href="${base}admin/adminPage">admin</a>
     ` ) 
     }
 
